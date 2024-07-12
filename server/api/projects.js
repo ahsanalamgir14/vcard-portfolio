@@ -4,7 +4,7 @@ export default defineEventHandler(() => {
   return [
     {
       id: 1,
-      title: 'Finance',
+      title: 'WatchSpotter',
       category: {
         id: 1,
         title: {
@@ -20,11 +20,11 @@ export default defineEventHandler(() => {
     },
     {
       id: 2,
-      title: 'Orizon',
+      title: 'Business Plan Collaboratif',
       category: {
         id: 1,
         title: {
-          en: 'Web Development',
+          en: 'Business Plan Software',
           tr: 'Web Geliştirme',
         },
       },
@@ -36,11 +36,11 @@ export default defineEventHandler(() => {
     },
     {
       id: 3,
-      title: 'Brawlhalla',
+      title: 'Tarabajos',
       category: {
         id: 2,
         title: {
-          en: 'Application',
+          en: 'Job Search Website',
           tr: 'Uygulama',
         },
       },

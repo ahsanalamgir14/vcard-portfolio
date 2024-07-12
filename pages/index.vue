@@ -81,7 +81,7 @@ const { data: services } = await useFetch('/api/services')
         <li v-for="testimonial in testimonials" :key="testimonial.id" class="testimonials-item" @click="showTestimonial(testimonial.id)">
           <div class="content-card">
             <figure class="testimonials-avatar-box">
-              <img :src="testimonial.image" alt="Daniel lewis" width="60">
+              <img :src="testimonial.image" alt="Caleb W. Tekule" width="60">
             </figure>
 
             <h4 class="h4 testimonials-item-title">
@@ -108,7 +108,7 @@ const { data: services } = await useFetch('/api/services')
 
         <div class="flex gap-5 mb-5 justify-start items-center">
           <div class="modal-avatar-box">
-            <img :src="testimonialItem.image" alt="Daniel lewis" width="80">
+            <img :src="testimonialItem.image" alt="Caleb W. Tekule" width="80">
           </div>
 
           <div class="modal-content">
@@ -136,7 +136,7 @@ const { data: services } = await useFetch('/api/services')
         Clients
       </h3>
 
-      <ul class="clients-list has-scrollbar">
+      <!-- <ul class="clients-list has-scrollbar">
         <li class="clients-item">
           <a href="#">
             <img src="images/logo-1-color.png" alt="client logo">
@@ -172,7 +172,7 @@ const { data: services } = await useFetch('/api/services')
             <img src="images/logo-6-color.png" alt="client logo">
           </a>
         </li>
-      </ul>
+      </ul> -->
     </section>
   </article>
 </template>

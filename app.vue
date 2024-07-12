@@ -6,7 +6,7 @@ const cookieLocale = useLocaleStore()
 
 locale.value = cookieLocale.getLocale || 'tr'
 
-const loadingPage = ref()
+const loadingPage = ref(true)
 
 onBeforeMount(() => {
   loadingPage.value = false
@@ -14,13 +14,13 @@ onBeforeMount(() => {
 
 onMounted(() => {
   setTimeout(() => {
-    loadingPage.value = true
+    loadingPage.value = false
   }, 1000)
 })
 </script>
 
 <template>
-  <LoadingPage v-show="!loadingPage" />
+  <LoadingPage v-if="!loadingPage" />
 
   <NuxtLayout>
     <NuxtPage transition />
